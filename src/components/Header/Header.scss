@@ -1,0 +1,102 @@
+.header-container {
+  display: flex;
+  padding-left: 20px;
+  border-bottom: 1px solid #dcdcdc;
+
+  .logo {
+    width: 120px
+  }
+
+
+  .bar {
+    margin: 20px 20px;
+    width: 575px;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+
+    &:hover {
+      box-shadow: 1px 1px 8px 1px #dcdcdc;
+    }
+
+    &:focus-within {
+      box-shadow: 1px 1px 8px 1px #dcdcdc;
+      outline: none;
+    }
+
+    .searchbar {
+      height: 45px;
+      border: none;
+      margin-left: 20px;
+      width: 500px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .voice {
+      width: auto;
+      height: 20px;
+      position: relative;
+      top: 5px;
+      left: 10px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 780px) {
+  .header-container {
+    .bar {
+      width: 100%;
+
+      .searchbar {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  .header-container {
+    .logo {
+      width: 100px;
+    }
+
+    .bar {
+      .searchbar {
+        width: 80%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .header-container {
+    .logo {
+      width: 85px;
+    }
+
+    .bar {
+      .searchbar {
+        width: 75%;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .header-container {
+    .logo {
+      width: 85px;
+    }
+
+    .bar {
+      .searchbar {
+        width: 65%;
+      }
+    }
+  }
+}
