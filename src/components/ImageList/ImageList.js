@@ -52,7 +52,6 @@ class ImageList extends Component {
         );
         let tempImages = this.state.images;
         tempImages.push(...result.data);
-        console.log("tempImages", tempImages);
         this.setState({
           images: tempImages,
           imagesFetchState: "successful",
