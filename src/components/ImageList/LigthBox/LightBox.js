@@ -3,10 +3,6 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
 export default class LightboxGallery extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   onMovePrevRequest = () => {
     const { photoIndex, images } = this.props;
 
@@ -24,7 +20,7 @@ export default class LightboxGallery extends Component {
   };
 
   render() {
-    const { images, photoIndex, showLightBox } = this.props;
+    const { images, photoIndex } = this.props;
 
     return (
       <div>

@@ -21,7 +21,7 @@ const LazyImage = ({ index, data, alt, getCurrentPhotoIndex }) => {
     src = src.join("/");
     src = src + `/${width}/${height}`;
     setSrc(src);
-  }, []);
+  }, [data.download_url, height, width]);
 
   const imageOnLoad = () => {
     setShowAuthor(true);
@@ -78,7 +78,12 @@ const LazyImage = ({ index, data, alt, getCurrentPhotoIndex }) => {
         </LazyLoad>
         {showAuthor && (
           <div className="author-container">
-            <a target="_blank" className="author-url" href={`${data.url}`}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="author-url"
+              href={`${data.url}`}
+            >
               <p className="author break-words break-all whitespace-pre-wrap">
                 {data.author}
               </p>
