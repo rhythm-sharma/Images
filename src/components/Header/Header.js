@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/google.png";
 import search from "../../assets/images/search.svg";
 
 import "./Header.scss";
